@@ -1,0 +1,24 @@
+GET http://localhost:3000/user/all
+
+###
+GET http://localhost:3000/user/john@example.com
+
+###
+POST http://localhost:3000/user/create
+content-type: application/json
+
+{
+    "name": "John",
+    "email": "john@example.com"
+}
+
+###
+PUT http://localhost:3000/user/john@example.com
+content-type: application/json
+
+{
+    "name": "due"
+}
+
+###
+DELETE http://localhost:3000/user/john@example.com
